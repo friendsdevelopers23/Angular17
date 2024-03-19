@@ -1,7 +1,7 @@
 <div>
-<div class="logo">
-  <img src="./../h1.jpg"a routerLink="/home-component">
-</div>
+  <header class="brand-name">
+    <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true" />
+  </header>
 <nav>
   <ul>
     <li><a routerLink="/home-component" routerLinkActive="inactive" ariaCurrentWhenActive="page">Home</a></li>
@@ -12,10 +12,15 @@
     <li><a routerLink="/contactus-component" routerLinkActive="active" ariaCurrentWhenActive="page">Contact us</a></li>
     <li><a routerLink="/references-component" routerLinkActive="active" ariaCurrentWhenActive="page">References</a></li>
 
-    <input type="search">
+    <input type="text" placeholder="Filter by city" />
+    <button class="primary" type="button">Search</button>
     
   </ul>
 </nav>
 </div>
+
+<section class="content">
+  <app-home></app-home>
+</section>
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
