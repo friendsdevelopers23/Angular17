@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><div>
+  <header class="brand-name">
+    <img class="brand-logo" src="assets/logo.svg" alt="logo" aria-hidden="true" />
+    <i class="fa fa-phone" style="font-size:30px"a h></i>
+  </header>
+<nav>
+  <ul>
+    <li><a routerLink="/home-component" routerLinkActive="inactive" ariaCurrentWhenActive="page">Home</a></li>
+    <li><a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">Services</a></li>
+    <li><a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a></li>
+    <li><a routerLink="/gallery-component" routerLinkActive="active" ariaCurrentWhenActive="page">Gallery</a></li>
+    <li><a routerLink="/blog-component" routerLinkActive="active" ariaCurrentWhenActive="page">Blog</a></li>
+    <li><a routerLink="/contactus-component" routerLinkActive="active" ariaCurrentWhenActive="page">Contact us</a></li>
+    <li><a routerLink="/references-component" routerLinkActive="active" ariaCurrentWhenActive="page">References</a></li>
+
+    <input type="text" placeholder="Filter by city" />
+    <button class="primary" type="button">Search</button>
+   
+  </ul>
+
+</nav>
+</div>
+
+<app-home
+  [imageUrl]="'banner-image.jpg'"
+  [imageAlt]="'Banner Image'"
+  [title]="'Welcome to Our Website'"
+  [description]="'Explore our services and products.'"
+  [buttonLabel]="'Learn More'"
+></app-home>
+<!-- The routed views render in the <router-outlet>-->
+  
+<router-outlet></router-outlet>

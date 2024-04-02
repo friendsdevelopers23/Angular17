@@ -1,0 +1,99 @@
+/* Style for header */
+.brand-name {
+    padding: 11px;
+    background-color: #f0f0f0;
+  }
+  
+  .brand-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Style for navigation */
+  nav {
+    background-color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 10px; /* Adjust spacing between navigation items */
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  a:hover {
+    background-color: #555;
+  }
+  
+  /* Style for search input and button */
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 5px;
+  }
+  
+  button.primary {
+    padding: 11px 15px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+  }
+  
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  input[type="text"] {
+    border: solid 1px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 30%;
+  }
+  button {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: rgb(67, 65, 65);
+    border-radius: 8px;
+  }
+  @media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 70%;
+    }   
+  }
+  @media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
+  }
+ 
+  
+
+  //phone
+  .fa-phone {
+    position: absolute;
+    right: 150px;
+    width: 200px;
+    height: 120px;
+    color:#4CAF50;
+    font-size: 30px; /* Adjust the size as needed */
+}
+ 
